@@ -1,0 +1,14 @@
+C:\Users\Emil\Desktop\FintechApp\FintechApp\bin\Debug\net10.0\FintechApp.exe
+C:\Users\Emil\Desktop\FintechApp\FintechApp\bin\Debug\net10.0\FintechApp.deps.json
+C:\Users\Emil\Desktop\FintechApp\FintechApp\bin\Debug\net10.0\FintechApp.runtimeconfig.json
+C:\Users\Emil\Desktop\FintechApp\FintechApp\bin\Debug\net10.0\FintechApp.dll
+C:\Users\Emil\Desktop\FintechApp\FintechApp\bin\Debug\net10.0\FintechApp.pdb
+C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\FintechApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\FintechApp.AssemblyInfoInputs.cache
+C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\FintechApp.AssemblyInfo.cs
+C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\FintechApp.csproj.CoreCompileInputs.cache
+C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\FintechApp.dll
+C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\refint\FintechApp.dll
+C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\FintechApp.pdb
+C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\FintechApp.genruntimeconfig.cache
+C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\ref\FintechApp.dll
