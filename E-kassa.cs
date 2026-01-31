@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace FintechApp
 {
     public class E_Kassa
     {
+        public string Name { get; set; }
         public List<Account> Accounts { get; set; }
 
-        public E_Kassa()
+        public E_Kassa(string name)
         {
+            Name = name;
             Accounts = new List<Account>();
         }
 
@@ -29,15 +31,19 @@ namespace FintechApp
                 Console.WriteLine("No accounts available.");
                 return;
             }
-            Console.WriteLine("{0,-12} {1,-10} {2,-10} {3,-20} {4,-10}", "Account No", "Currency", "Balance", "Description", "Status");
+
+            Console.WriteLine($"E-Kassa: {Name}");
+            Console.WriteLine("{0,-12} {1,-10} {2,-10} {3,-20} {4,-10}",
+                "Account No", "Currency", "Balance", "Description", "Status");
+
             foreach (var account in Accounts)
             {
                 Console.WriteLine("{0,-12} {1,-10} {2,-10} {3,-20} {4,-10}",
-                                  account.AccountNumber,
-                                  account.Currency,
-                                  account.Balance,
-                                  account.Description,
-                                  account.Status);
+                    account.AccountNumber,
+                    account.Currency,
+                    account.Balance,
+                    account.Description,
+                    account.Status);
             }
         }
 
@@ -45,6 +51,7 @@ namespace FintechApp
         {
             return Accounts.FirstOrDefault(acc => acc.AccountNumber == accountNumber);
         }
+
         public void ChangeAccountStatus(string accountNumber, string newStatus)
         {
             var account = GetAccountByNumber(accountNumber);
@@ -61,7 +68,11 @@ namespace FintechApp
 
         private string GetNextAccountNumber()
         {
-            List<string> predefinedAccountNumbers = new List<string> { "45637896", "45625326", "45637896" };
+            List<string> predefinedAccountNumbers = new List<string>
+            {
+                "45637896", "45625326", "45637897"
+            };
+
             int index = Accounts.Count % predefinedAccountNumbers.Count;
             return predefinedAccountNumbers[index];
         }

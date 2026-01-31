@@ -12,3 +12,4 @@ C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\refint\FintechApp.
 C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\FintechApp.pdb
 C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\FintechApp.genruntimeconfig.cache
 C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\ref\FintechApp.dll
+C:\Users\Emil\Desktop\FintechApp\FintechApp\obj\Debug\net10.0\FintechApp.sourcelink.json

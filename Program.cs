@@ -1,8 +1,9 @@
-﻿using FintechApp;
+﻿using System;
+using FintechApp;
 
 class Program
 {
-    static E_Kassa eKassa = new E_Kassa();
+    static E_Kassa eKassa;
 
     static void Main(string[] args)
     {
@@ -40,6 +41,7 @@ class Program
         }
     }
 
+
     static void ShowMainMenu()
     {
         Console.WriteLine("1. Create E-Kassa");
@@ -50,18 +52,29 @@ class Program
         Console.WriteLine("6. Exit");
         Console.Write("Make your selection: ");
     }
-
     static void CreateE_Kassa()
     {
-        Console.WriteLine("E-Kassa created.");
+        Console.Write("Enter E-Kassa name: ");
+        string name = Console.ReadLine();
+
+        eKassa = new E_Kassa(name);
+        Console.WriteLine($"E-Kassa '{name}' created.");
     }
 
     static void CreateAccount()
     {
+        if (eKassa == null)
+        {
+            Console.WriteLine("Please create E-Kassa first.");
+            return;
+        }
+
         Console.Write("Enter the account currency (AZN/USD): ");
         string currency = Console.ReadLine();
+
         Console.Write("Enter the opening balance: ");
         double balance = Convert.ToDouble(Console.ReadLine());
+
         Console.Write("Enter the account description: ");
         string description = Console.ReadLine();
 
@@ -70,29 +83,45 @@ class Program
 
     static void ShowAllAccounts()
     {
+        if (eKassa == null)
+        {
+            Console.WriteLine("Please create E-Kassa first.");
+            return;
+        }
+
         eKassa.ShowAllAccounts();
     }
 
     static void ShowAccountDetails()
     {
+        if (eKassa == null)
+        {
+            Console.WriteLine("Please create E-Kassa first.");
+            return;
+        }
+
         Console.Write("Enter the account number: ");
         string accountNumber = Console.ReadLine();
+
         var account = eKassa.GetAccountByNumber(accountNumber);
 
         if (account != null)
-        {
             account.ShowAccountDetails();
-        }
         else
-        {
             Console.WriteLine("Account not found.");
-        }
     }
 
     static void ChangeAccountStatus()
     {
+        if (eKassa == null)
+        {
+            Console.WriteLine("Please create E-Kassa first.");
+            return;
+        }
+
         Console.Write("Enter the account number: ");
         string accountNumber = Console.ReadLine();
+
         Console.Write("Enter the new status (Active/Deactive): ");
         string newStatus = Console.ReadLine();
 

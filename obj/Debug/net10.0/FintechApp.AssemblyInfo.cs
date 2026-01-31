@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FintechApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d1b7483689093e9920e53474649340eb30e123b")]
 [assembly: System.Reflection.AssemblyProductAttribute("FintechApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FintechApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
